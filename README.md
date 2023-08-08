@@ -1,6 +1,6 @@
 # sqlalchemy-challenge
 
-This repository consists of:
+This repository contains:
 * Folder **SurfsUp** consisting of the following:
   *   Folder **Resources** with sqllite db and 2 csv files provided
   *   **climate_starter.ipynb** with jupyter notebook script Analysing and Exploring the Climate Data
@@ -25,7 +25,7 @@ This repository consists of:
 * For retreiving the date one year from last date in dataset, it was advised not to use date as a variable. **I have provided alternate methods in comment section using hard coded date from previous steps** **date_clc = dt.datetime(2017, 8, 23)** however, using date generated into the variable from previous step is a better coding practice hence used that in my code. I have checked and both provide identical results
 * We can use dropna from the dataframe. I tried both ways and on plotting the result was same so did not drop NA since it would involve additional work on x axis
 * For station analysis, we could use last 12 months date from most recent date as calculated for previous line graph however, I have used 12 months of temperature data for the most active station based on the most recent date available for that station in the jupyter notebook code. It yields identical plots since there is a difference of only 1 row of data. Again I have not hard coded dates since its not a good coding practice. I havent hard coded staion id either
-* Similar date calulations have been followed in the app.py script as well with alternate code in comments aft checking both work correctly. I have dropped NA values in this case to display only available data in json format
+* Similar date calulations have been followed in the app.py script as well with alternate code in comments after checking both work correctly. I have dropped NA values in this case to display only available data in json format
 * All details of stations from the measurements table have been extracted from the stations table for the stations route assuming all informaiton needs to be displayed for this route 
 * In the dynamic routes we could have used error handling to determine correctness of date format inputted in URL. Current code would only output null
 
